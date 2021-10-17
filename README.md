@@ -29,3 +29,23 @@ http://finaludagram.s3-website.us-east-2.amazonaws.com
 
 ![app](./Documentation/app.png)
 
+## Dependencies
+
+- Node
+- Angular
+- Express
+- AWS
+
+## infrastructure
+
+AWS EB for API deployment
+AWS S3 for frontend deployment
+AWS RDS for the database
+
+## pipeline
+
+1- install dependencies
+2- build backend and frontend
+3- deploy backend and frontend
+
+![diagram](./Documentation/x.drawio.png)
