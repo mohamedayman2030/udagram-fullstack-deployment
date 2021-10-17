@@ -3,7 +3,7 @@
 This project is part of the Udacity FullStack JavaScript nanodegree. the code was written by udacity and my task was to deploy this full stack application.
 
 you can check the application here:
-http://finaludagram.s3-website.us-east-2.amazonaws.com/home
+http://finaludagram.s3-website.us-east-2.amazonaws.com
 
 * RDS for postgres database 
 
