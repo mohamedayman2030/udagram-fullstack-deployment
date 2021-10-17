@@ -21,6 +21,10 @@ http://tagrobaudagram.s3-website-us-west-2.amazonaws.com/home
 
 ![circleci](./Documentation/circleci.png)
 
+* CircleCI environment
+
+![env](./Documentation/env.png)
+
 * the application after deployment
 
 ![app](./Documentation/app.png)
