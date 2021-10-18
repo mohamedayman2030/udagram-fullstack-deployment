@@ -2,4 +2,4 @@
 - run CircleCli pipeline 
 - deploy code to AWS
 
-![pipeline](./pipeline.png)
+![pipeline](../pipeline.png)
