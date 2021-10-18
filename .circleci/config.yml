@@ -1,12 +1,21 @@
 # This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
 version: 2.1
 
+build:
+  jobs:
+    -build:
+      filters:
+        branches:
+          only:
+            - master
+
 # Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
 # See: https://circleci.com/docs/2.0/orb-intro/
 orbs:
   node: circleci/node@4.1.0
   eb: circleci/aws-elastic-beanstalk@1.0.0
   aws-cli: circleci/aws-cli@2.0.3
+
 jobs:
   build:
     docker:
@@ -22,9 +31,10 @@ jobs:
       - run:
           name: install backend dependencies
           command: npm run backend:install
-      - run:
+      - run:     
           name: build frontend
           command: npm run frontend:build
+      
       - run:
           name: build backend
           command: npm run backend:build
